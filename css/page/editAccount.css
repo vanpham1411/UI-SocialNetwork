@@ -1,0 +1,109 @@
+html{
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size: 16px;
+}
+
+.main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+
+    
+}
+
+.container {
+    width: auto;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: 800px;
+    max-width: 100%;
+}
+
+
+
+/* vertical-list */
+
+
+
+ul{
+    list-style: none;
+    font-size: 16px;
+}
+
+.vertical-list a{
+    color:#000;
+    text-decoration: none;
+    
+    padding: 16px 16px 16px 32px;
+    width: 230px;
+    display: block;
+    border-left: 2px solid transparent ;
+}
+
+.item:hover {
+    border-left: 2px solid #dbdbdb ;
+    background-color: rgba(250, 250, 250, 1);
+}
+
+
+
+.vertical-list {
+    /* width: 230px; */
+    border-right: 1px solid #ccc;
+}
+
+.vertical-list .item-focus {
+    border-left: 2px solid #000;
+}
+
+
+
+
+
+
+
+
+/* content */
+.content {
+    padding: 30px 0px;
+    flex:1;
+}
+
+
+label, input {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size: 16px;
+}
+
+.container-label {
+    text-align: right;
+    margin-right: 32px;
+    font-weight: 600;
+}
+
+
+
+#edit-profile input {
+    height: 32px;
+    padding: 0 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.container-btn {
+    justify-content: center;
+}
+
+.container-btn .submit-btn {
+    padding: 8px;
+    min-width: 100px;
+    font-size: 16px;
+    background-color: #0095ff;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}

@@ -1,0 +1,70 @@
+.container{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 100px 0px;
+}
+
+.main{
+    border-radius: 4px;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 12%), 0 4px 10px 0 rgb(0 0 0 / 11%);
+    padding: 20px;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #ccc;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+.body{
+    padding: 12px 0px;
+}
+
+.login-form{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+.input-ele{
+    padding: 12px;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+input.input-ele{
+    border: 1px solid #ccc;
+    margin-bottom: 12px;
+}
+
+button.input-ele {
+    background-color: rgb(0,149,296);
+    color: #fff;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.login-error{
+    color: red;
+    
+}
+.footer{
+    margin-top: 8px;
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+
+.footer a {
+    color: #000;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.footer a:hover{
+    text-decoration: underline;
+}

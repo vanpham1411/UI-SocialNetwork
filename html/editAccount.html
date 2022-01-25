@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/common/header.css">
+    <link rel="stylesheet" href="../css/page/editAccount.css">
+    <link rel="stylesheet" href="../lib/font/fontawesome-free-5.15.4-web/css/all.min.css">
+    <title>Thông tin cá nhân</title>
+</head>
+<body>
+    <!-- header -->
+    <div class="container-header">
+        <div class="header row">
+            <!-- header-title -->
+            <div class="header-title col">
+                <h1>social network</h1>
+            </div>
+            <!-- header-search -->
+            <div class="header-search">
+                    <form action="" onsubmit="" class="form-search">
+                        <div class="container-form row">
+                            <div>
+                                <input type="text" placeholder="Search" class="input-search">
+                            </div>
+                            <div class="container-btn-search">
+                                <button type="submit" class="btn-search">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                
+            </div>
+            <!-- header-menu -->
+            <div class="container-menu ">
+                <ul class="header-menu row">
+                    <li class="col c2 menu-item "><a href="./home.html">
+                        <i class="fas fa-home"></i>
+                    </a></li>
+                    <li class="col c2 menu-item"><a href="">
+                        <i class="fas fa-users"></i>
+                    </a></li>
+                    <li class="col c2 menu-item"><a href="">
+                        <i class="fas fa-user-friends"></i>
+                    </a></li>
+                    <li class="col c2 menu-item"><a href="">
+                        <i class="fab fa-facebook-messenger"></i>
+                    </a></li>
+                    <!-- <li class="col c2 menu-item"><a href="">
+                        <i class="fas fa-plus-square"></i>
+                    </a></li> -->
+                    <li class="col c2 menu-item user-menu">
+                        <div href="" class="js-moreBtn div-contain">
+                            <div class="container-ava">
+                                <img src="../lib/img/avatar1.jpg" alt="" class="img-ava">
+                            </div>
+                        </div>
+                    
+                        <div class="action-list js-sub-menu">
+                            <ul class="subnav">
+                                <li><a href="">Profile</a></li>
+                                <li><a href="#">Setting</a></li>
+                                <li><a href="#">Log out</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="col c2 menu-item"><a href="">
+                        <i class="fas fa-cog"></i>
+                    </a></li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Edit Account -->
+    <div class="main">
+        <div class="container row">
+            <div class="vertical-list row">
+                <ul >
+                    <li >
+                        <a class="item-focus" href="./editAccount.html">Sửa thông tin cá nhân</a>
+                    </li>
+                    <li>
+                        <a class="item" href="./changePassword.html">Đổi mật khẩu</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="content row">
+                <div class="header ">
+                    <img src="" alt="">
+    
+                </div>
+                <div class="body c-12">
+                    <form action="" class="" id="edit-profile" >
+                        <div class="row p10">
+                            <div class="col c-3 container-label">
+                                <img src="" alt="" width="32" height="32">
+                            </div>
+                            <div class="col c-7">
+                                <span>Username </span>
+                                <input type="text" id="username" value="người dùng 1" hidden>
+                            </div>    
+                        </div>
+                        <div class="row p10">
+                            <div class="col c-3 container-label">
+                                <label  for="username">tên đăng nhập</label>
+                            </div>
+                            <div class="col c-7">
+                                <input type="text" id="username" value="người dùng 1">
+                            </div>    
+                        </div>
+                        <div class="row p10">
+                            <div class="col c-3 container-label">
+                                <label  for="fullname">họ tên</label>
+                            </div>
+                            <div class="col c-7">
+                                <input type="text" id="fullname" value="phạm văn a">
+                            </div>    
+                        </div>
+                        <div class="row p10">
+                            <div class="col c-3 container-label">
+                                <label  for="mobile">số điện thoại</label>
+                            </div>
+                            <div class="col c-7">
+                                <input type="text" id="mobile" value="0182636363">
+                            </div> 
+                        </div>
+                        <div class="row p10">
+                            <div class="col c-3 container-label">
+                                <label  for="email">email</label>
+                            </div>
+                            <div class="col c-7">
+                                <input  type="text" id="email" value="nva@gmail.com">
+                            </div> 
+                        </div>
+                        <div class="row p10 container-btn">
+                            <button type="" disabled="disabled" class="submit-btn" >Thay đổi</button>
+                            
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

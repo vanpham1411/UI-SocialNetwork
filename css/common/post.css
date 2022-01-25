@@ -1,0 +1,356 @@
+/* create new post */
+:root{
+    --gray:#ccc;
+    --base-color: 0,149,296;
+    --white: 255,255,255;
+    --text-gray-light:#65676b;
+    --text-gray-dark:#262626;
+    --gray-light:#f0f2f5;
+}
+
+
+
+input::placeholder{
+    color: var(--text-gray-light);
+}
+
+input {
+    color: var(--text-gray-dark);
+    caret-color: var(--text-gray-dark);
+}
+.row.top-body{
+    justify-content: center;
+    padding: 20px 0px 20px;
+}
+.container-new-post{
+    background-color: var(--white);
+    width: 500px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 12%), 0 4px 10px 0 rgb(0 0 0 / 11%);
+}
+
+
+
+.container-new-post .row{
+    
+}
+.container-ava {
+    margin-right: 8px;
+    position: relative;
+    width: 32px;
+}
+
+.post-header .container-ava .post-ava{
+    position: absolute;
+    top:4px;
+    right: 0px;
+}
+ 
+.container-ava .img-ava{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.container-new-post .post-text {
+    flex: 1;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 18px;
+    border: none;
+    background-color: var(--gray-light);
+    color: var(--text-gray);
+
+}
+
+.container-new-post .btn-container {
+    width: 100%;
+    border-top: 1px solid var(--gray);
+    justify-content: center;
+    
+}
+
+.container-new-post .btn-create {
+    margin: 10px;
+    padding: 8px;
+    min-width: 120px;
+    border-radius: 4px;
+    border: none;
+    background-color: rgb(var(--base-color));
+    color: rgb(var(--white));
+    font-weight: 600;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 16px;
+}
+
+.container-new-post .btn-create:hover{
+    opacity: 0.8;
+}
+
+
+
+
+/* view post */
+.main-body{
+    
+}
+
+
+
+ 
+
+.w500{
+    width: 500px;
+}
+
+.post{
+    background-color: var(--white);
+    width: 500px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 12%), 0 4px 10px 0 rgb(0 0 0 / 11%);
+    color: var(--text-gray-dark);
+}
+
+/* post-header */
+
+.post-header.row {
+    padding: 10px;
+}
+
+.post-header .header-des{
+    flex:1;
+}
+
+.post-header .header-des .post-user{
+    
+}
+.header-des .post-user a{
+    /* margin-left: 8px; */
+    text-decoration: none;
+    color: var(--text-gray-dark);
+    font-weight: 500;
+}
+
+.header-des .post-user a:hover{
+    text-decoration: underline;
+}
+
+.post-header .header-des .post-date {
+    font-size: 13px;
+    color: var(--text-gray-light);
+}
+
+.post-header .post-action{
+    position: relative;
+}
+
+.post-header .post-action .btn-more{
+    border: none;
+    padding: 6px 8px;
+    border-radius: 50%;
+    background-color: var(--white);
+    color:var(--text-gray-dark);
+    cursor: pointer;
+    display: block;
+}
+
+.post-header .post-action .btn-more:hover{
+    background-color:var(--gray-light);
+}
+
+.post-header .post-action .action-list{
+    position: absolute;
+    min-width: 100px;
+    border-radius: 4px;
+    background-color: rgba(255,255,255,1);
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 12%), 0 4px 10px 0 rgb(0 0 0 / 11%);
+    font-size: 14px;
+    padding: 4px 4px;
+    left: -40px;
+    display: none;
+}
+
+.post-action .action-list ul {
+    list-style-type: none;
+}
+
+.post-action .action-list li.action-item{
+    cursor: pointer;
+    border-radius: 4px ;
+}
+
+.post-action .action-list li.action-item:hover{
+    background-color: var(--gray-light);
+}
+
+.post-action li.action-item .btn-more-action {
+    border: none;
+    background-color: var(--white);
+    width: 100%;
+    height: 100%;
+    display: block;
+    font-size: 14px;
+    padding: 8px 0px;
+    cursor: pointer;
+    color: var(--text-gray-dark);
+}
+
+/* POST-BODY */
+.post .post-body {
+    margin-top: 8px;
+}
+/* POST-CONTENT */
+.post-body .post-content {
+    font-family: inherit;
+    font-size: 15px;
+    padding: 0px 10px 10px;
+}
+/* POST-IMAGE */
+
+.post-body .post-img{
+    width: 500px;
+}
+
+/* POST-REACT */
+
+.post-body .post-react {
+    padding: 10px;
+    
+}
+
+.post-react button.btn-react {
+    border: none;
+    background-color: var(--white);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.post-react button.btn-react:hover{
+    opacity: 0.8;
+}
+
+.post-react a {
+    text-decoration: none;
+    color: var(--text-gray-dark);
+}
+
+/* POST COMMENT CONTAINER */
+
+/* COMMENT FORM */
+textarea{
+    border-radius: 18px;
+    border: none;
+    background-color: var(--gray-light);
+    color: var(--text-gray);
+    padding: 10px 10px 10px 18px;
+    font-size: 15px;
+    resize: none;
+    font-family: inherit;
+}
+textarea:focus-visible{
+    outline: none;
+}
+.comment-form textarea.comment-input{
+    border-radius: 18px;
+    border: none;
+    background-color: var(--gray-light);
+    color: var(--text-gray);
+    padding: 10px 10px 10px 18px;
+    font-size: 15px;
+}
+/* COMMENT-DISPLAY */
+
+.comment-part .comment:hover .btn-more {
+    display: block;
+}
+
+.div-base-gray{
+    border-radius: 18px;
+    border: none;
+    background-color: var(--gray-light);
+    padding: 4px 12px 8px;
+    font-size: 15px;
+}
+
+
+.div-base-gray .user-link{
+    text-decoration: none;
+    color: var(--text-gray-dark);
+    font-weight: 500;
+}
+
+.div-base-gray .user-link:hover{
+    text-decoration: underline;
+}
+
+.btn-more{
+    border: none;
+    padding: 6px 8px;
+    border-radius: 50%;
+    background-color: var(--white);
+    color: var(--text-gray-light);
+    cursor: pointer;
+    display: none;
+}
+.comment .container-btn-more {
+    width: 60px;
+}
+.comment-part .comment:hover .btn-more {
+    display: block;
+}
+
+.btn-more:hover{
+    background-color: var(--gray-light);
+}
+
+.mr8{
+    margin-right: 8px;
+}
+
+.action-arrow button{
+    background: none;
+    border: none;
+    font-size: 13px;
+    margin: 0px 12px;
+    font-weight: 600;
+    color: var(--text-gray-dark);
+    cursor: pointer;
+}
+
+/* REPLY COMMENT */
+
+.reply-comment{
+    margin-left: 50px;
+}
+
+.reply-comment .view-reply{
+    border: none;
+    background:none;
+    position: relative;
+}
+
+.reply-comment .view-reply .line {
+    width: 30px;
+    border: 1px solid var(--text-gray-dark);
+    display: inline-block;
+    position: absolute;
+    top: 8px;
+}
+
+.reply-comment .view-reply span{
+    padding-left: 30px;
+}
+
+.c-12.row.p10.new-post-content:focus-visible{
+    outline: none;
+}
+
+
+
+.img-input{
+    width: 200px;
+    height: 200px;
+    background: url("/lib/img/post-image.jpg") no-repeat right top;
+}

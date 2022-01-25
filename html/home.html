@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/page/home.css">
+    <link rel="stylesheet" href="../css/common/header.css">
+    <link rel="stylesheet" href="../css/common/post.css">
+    <link rel="stylesheet" href="../css/common/createPostForm.css">
+    <link rel="stylesheet" href="../lib/font/fontawesome-free-5.15.4-web/css/all.min.css">
+    <title>home</title>
+</head>
+<body>
+    <div class="main">
+        <!-- header -->
+        <div class="container-header">
+            <div class="header row">
+                <!-- header-title -->
+                <div class="header-title col">
+                    <h1>social network</h1>
+                </div>
+                <!-- header-search -->
+                <div class="header-search">
+                        <form action="" onsubmit="" class="form-search">
+                            <div class="container-form row">
+                                <div>
+                                    <input type="text" placeholder="Search" class="input-search">
+                                </div>
+                                <div class="container-btn-search">
+                                    <button type="submit" class="btn-search">
+                                        <i class="fas fa-search"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    
+                </div>
+                <!-- header-menu -->
+                <div class="container-menu ">
+                    <ul class="header-menu row">
+                        <li class="col c2 menu-item "><a href="./home.html">
+                            <i class="fas fa-home"></i>
+                        </a></li>
+                        <li class="col c2 menu-item"><a href="">
+                            <i class="fas fa-users"></i>
+                        </a></li>
+                        <li class="col c2 menu-item"><a href="">
+                            <i class="fas fa-user-friends"></i>
+                        </a></li>
+                        <li class="col c2 menu-item"><a href="">
+                            <i class="fab fa-facebook-messenger"></i>
+                        </a></li>
+                        <!-- <li class="col c2 menu-item"><a href="">
+                            <i class="fas fa-plus-square"></i>
+                        </a></li> -->
+                        <li class="col c2 menu-item user-menu">
+                            <div href="" class="js-moreBtn div-contain">
+                                <div class="container-ava">
+                                    <img src="../lib/img/avatar1.jpg" alt="" class="img-ava">
+                                </div>
+                            </div>
+                        
+                            <div class="action-list js-sub-menu">
+                                <ul class="subnav">
+                                    <li><a href="">Profile</a></li>
+                                    <li><a href="./editAccount.html">Setting</a></li>
+                                    <li><a href="#">Log out</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- body -->
+        <div class="main">
+
+            <div class="row top-body">
+                <!-- create new post -->
+                <div class=" row wrapper container-new-post ">
+                    <div class="col c-12 ">
+                        <div class="row p10">
+                            <div class="container-ava ">
+                                <img src="../lib/img/avatar1.jpg" alt="" class="img-ava">
+                            </div>
+                            <div class="post-text">
+                                <span class="">bạn đang nghĩ gì</span>
+        
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col c-12 "> 
+                        <div class="row btn-container">
+                            <button class="btn-create js-create-post">Tạo bài viết</button>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+
+            <!-- list of post -->
+            <div class="row jc-center ">
+                
+                    <div class="post w500">
+                        <div class="post-header row">
+                            <div class="container-ava pos-re">
+                                <div class="post-ava">
+                                    <img src="../lib/img/avatar1.jpg" alt="" class="img-ava">
+                                </div>
+                            </div>
+                            <div class="header-des">
+                                <div class="post-user">
+                                    <a class="user-link" href="#">user_a</a>
+                                </div>
+                                <div class="post-date">10-12-2021</div>
+                            </div>
+                            <div class="post-action">
+                                <button class="btn-more js-moreBtn">
+                                    <i class="fas fa-ellipsis-h icon-more"></i>
+                                </button>
+                                <div class="action-list js-sub-menu">
+                                    <ul>
+                                        <li class="action-item"><button class="btn-more-action">Sửa</button></li>
+                                        <li class="action-item"><button class="btn-more-action">Xóa</button></li>
+                                        <li class="action-item"><button class="btn-more-action">Hủy</button></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="post-body">
+                            <div class="post-content">
+                                content owr day
+                            </div>
+
+                            <div class="">
+                                <img class="post-img" src="../lib/img/post-image.jpg" alt="">
+                            </div>
+                            <div class="row post-react">
+                                <div class="col c-2">
+                                    <button class="btn-react post-like" >
+                                        <i class="far fa-heart" onclick="likePost(this)"></i>
+                                    </button>
+                                    <a class="nblikes" href="#">1</a>
+                                </div>
+                                <div class="col c-2">
+                                    <button class="btn-react ">
+                                        <i class="far fa-comment"></i>
+                                    </button>
+                                </div>
+                                <div class="col c-o-7 c-1">
+                                    <button class="btn-react ">
+                                        <i class="far fa-bookmark" onclick="savePost(this)"></i>
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                            <div class="comment-container row wrapper ">
+                                <div class="col c-12 write-comment p10">
+                                    <div class="row">
+                                        <div class="container-ava">
+                                            <div class="post-ava">
+                                                <img src="../lib/img/avatar1.jpg" alt="" class="img-ava">
+                                            </div>
+                                        </div>
+                                        <div class="div flex1">
+                                            <form action="" class="w100 comment-form" id="commentform" >
+                                                <textarea rows="1"  class="w100 comment-input" oninput="" id="comment-input" spellcheck="false" placeholder="Viết bình luận... "></textarea>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col c-12 display-comment" >
+                                    <div class="row p10 comment">
+                                        <div class="container-ava">
+                                            <div class="post-ava">
+                                                <img src="../lib/img/avatar1.jpg" alt="" class="img-ava">
+                                            </div>
+                                        </div>
+                                            
+                                        <div class="div-base-gray mr8">
+                                            <a href="" class="user-link">user_a</a>
+                                            <div class="comment-content">
+                                                tuy chinh do dai comment cho phu hop neu ma dai qua thi phai xuong dong khong xuong la toang
+                                            </div>
+                                        </div>
+                                    </div>    
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                </div>    
+            </div>    
+        </div>
+    </div>
+
+
+
+    <div class="modal js-modal">
+        <div class="modal-container js-modal-container">
+            <div class="modal-close js-modal-close">
+                <i class="fas fa-times"></i>
+            </div>
+            <div class="modal-header">
+                <h1>Tạo bài viết</h1>
+            </div>
+            <div class="modal-body">
+                <div class="body-header">
+                    <div class="post-header row">
+                        <div class="container-ava pos-re">
+                            <div class="post-ava">
+                                <img src="../lib/img/avatar1.jpg" alt="" class="img-ava">
+                            </div>
+                        </div>
+                        <div class="header-des">
+                            <div class="post-user">
+                                <a class="user-link" href="#">user_a</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="body-main">
+                    <form action="" class="row wrapper form-create-post">
+                        <div class="new-post custom-scrollbar">
+                            <div class="c-12 p10 new-post-content" contenteditable="true">   
+                            </div>
+                            <img class="post-img" id="blah" src="../lib/img/avatar1.jpg" alt="your image" />
+                        </div>
+                        <div class="c-12  row p10">
+                            <input type="file" name="" id="file-input" onchange="inputChange()" hidden>
+                            <button class="create-btn" id="btn-inputimg">Thêm ảnh</button>
+                        </div>
+                        <div class=" c-12 p10 row">
+                            <button type="submit">submit</button>
+                        </div>    
+                    </form>
+                </div>
+                
+            </div>
+            
+        </div>
+    </div>
+
+   
+    
+</body>
+
+
+</html>
+
+<script src="../js/createPostForm.js"></script>
+<script src="../js/common.js"></script>
+
+<script >
+    //display image when input file 
+    var inputimg = document.getElementById('file-input');
+    console.log([document.getElementById("btn-inputimg")]);
+
+    document.getElementById("btn-inputimg").onclick = function (e){
+        console.log("on click btn")
+        inputimg.click();
+        e.preventDefault();
+        
+    }
+    
+    function inputChange() {
+        const [file] = inputimg.files;
+        if (file) {
+            const imgURL = URL.createObjectURL(file);
+            blah.src = URL.createObjectURL(file);
+        }else {
+            blah.src = "";
+        }
+
+    }
+    
+	
+	
+    
+    
+
+
+    document.getElementById("comment-input").addEventListener("input",function(){
+        var commentInput = document.getElementById("comment-input")
+        commentInput.style.height = "1px";
+        console.log("scoll height" + commentInput.scrollHeight);
+       
+
+        var height = commentInput.scrollHeight + "px";
+        commentInput.style.height = height;
+        var commentForm =  document.getElementById("commentform")
+        commentForm.style.height = height;
+    })
+
+    function auto_height(elem) {  /* javascript */
+    elem.style.height = "1px";
+    console.log("scoll height:" +  elem.scrollHeight);
+        elem.style.height = (elem.scrollHeight+ 38)+"px";
+        document.getElementById("commentform").style.height = elem.style.height;
+    }
+</script>
+
+<script>
+    function likePost(e) {
+        e.classList.toggle("fas");
+        e.classList.toggle("cr");
+        console.log(e.parentElement);
+    }
+    function savePost(e){
+        e.classList.toggle("fas");
+    }
+</script>

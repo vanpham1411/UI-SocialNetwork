@@ -1,0 +1,158 @@
+.container-header {
+    margin: 2px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border-bottom: 1px solid #ccc ; */
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 12%), 0 4px 10px 0 rgb(0 0 0 / 11%);
+    
+}
+.header {
+    height: 54px;
+    align-items: center;
+    padding: 0 20px;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.header-title {
+
+}
+
+.header-search{
+
+}
+
+
+/* header-search */
+
+.form-search {
+    width: 100%;
+ }
+ 
+ .form-search .container-form {
+     border: 1px solid #ccc;
+     border-radius: 4px;
+ }
+ 
+ .form-search input.input-search {
+     margin: 4px;
+     padding: 2px 2px 2px 4px; 
+     font-size: 14px;
+     width: 250px;
+     min-width: 150px;
+     border: none;
+ }
+ 
+ .form-search .container-btn-search {
+     position: relative;
+     border: none;
+     background-color: #fff;
+ 
+ }
+ 
+ .form-search .container-btn-search .btn-search {
+     position: absolute;
+     right: 4px;
+     top: 6px;
+     border: none;
+     background-color: #fff;
+     color: #666;
+ }
+ 
+ input:focus{
+     outline: none;
+ }
+ 
+
+/* header-menu */
+
+.container-menu {
+    height: 100%;
+
+}
+
+.header-menu.row{
+    height: 100%;
+    align-items: center;
+}
+
+.menu-item {
+    height: 100%;
+}
+
+.menu-item a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: auto;
+    min-width: 54px;
+    text-decoration: none;
+    color: #333;
+    
+}
+
+.menu-item a:hover {
+    background-color: #eee;
+    border-radius: 4px ;
+}
+    
+
+.menu-item a>i {
+    font-size: 24px;
+}
+
+.menu-item .container-ava .img-ava{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+
+.user-menu{
+    position: relative;
+    
+}
+
+.user-menu .div-contain{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-right: 8px;
+}
+
+
+.user-menu .action-list{
+    position: absolute;
+    min-width: 100px;
+    border-radius: 4px;
+    background-color: rgba(255,255,255,1);
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 12%), 0 4px 10px 0 rgb(0 0 0 / 11%);
+    font-size: 14px;
+    padding: 4px 4px;
+    display: none;
+    left: -50px;
+}
+
+.user-menu .subnav{
+    list-style-type: none;
+}
+
+.user-menu .subnav li{
+    width: 100%;
+    height: 100%;
+    display: block;
+    font-size: 14px;
+    cursor: pointer;
+    color: #262626;
+}
+
+.user-menu .subnav li a{
+    padding: 8px 0px;
+}
+
+
+
+
